@@ -1,0 +1,69 @@
+/* SlideBarWebMenu.scss (o tu archivo de estilos preferido) */
+
+.slide-bar {
+    position: fixed;
+    top: 60%;
+    left: 0;
+    transform: translateY(-50%);
+    background-color: rgba(210, 218, 219, 0.51);
+    width: 42px;
+    display: flex;
+    flex-direction: column;
+    z-index: 999;
+    border-radius: 7px;
+    align-content: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  
+    .icon {
+      font-size: 20px;
+      color: #000000;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      display: flex;
+      align-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: space-around;
+      padding: 8px;
+      svg {
+        margin-left: 2px;
+      }
+    }
+  
+    .icon.active {
+      background-color: rgba(156, 154, 99, 0.4549019608);
+      border-right: 4px solid #000;
+    }
+    .toggle-button {
+      cursor: pointer;
+      font-size: 11px;
+      font-family: Arial, Helvetica, sans-serif;
+      color: #fff;
+      background-color: rgba(186, 18, 40, 0.4117647059);
+   
+      border-radius: 3px;
+      width: 100%;
+      text-align: center;
+      border-bottom: #ffffffcf 2px solid;
+      user-select: none;
+    }
+  }
+  
+  .slide-bar.active {
+    width: 200px;
+    transition: width 0.3s;
+    .icon {
+      justify-content: flex-start;
+      padding-left: 10px;
+      svg {
+        margin-left: 10px;
+      }
+    }
+    .toggle-button {
+      padding: 10px;
+    }
+  }
+  
+  

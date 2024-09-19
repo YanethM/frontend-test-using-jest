@@ -1,0 +1,2 @@
+	•	En App.test.tsx estás probando la integración del componente Button dentro de la aplicación y verificando la funcionalidad del botón con un mock de alert.
+	•	En Button.test.js estás probando solo la correcta renderización del componente Button con el texto adecuado, sin preocuparte por su interacción o eventos.

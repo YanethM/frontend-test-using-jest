@@ -1,0 +1,6 @@
+.App{
+    display: flex;
+    font-family: 'IBM Plex Sana Thai Looped', sans-serif;
+    color: rgb(0, 0, 0);
+    background: rgb(255, 255, 255);
+}
